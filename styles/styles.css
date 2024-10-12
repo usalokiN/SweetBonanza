@@ -488,14 +488,26 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
+    z-index: 5;
+    background: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li a {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    transition: color .3s, background-color 0.3s;
+}
+.nav-links li a:hover {
+    color: #ffcc00; /* Изменение цвета текста при наведении */
+    background-color: rgba(255, 204, 0, 0.2); /* Лёгкий фон при наведении */
+    border-radius: 5px; /* Слегка закруглённые углы */
 }
 
 /* Стили для кнопки-бургера */
